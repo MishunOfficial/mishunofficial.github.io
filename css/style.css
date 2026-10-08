@@ -64,7 +64,6 @@ a:hover
 {
 	display: flex;
 	justify-content: center;
-	gap: 20px;
 }
 
 .hero-buttons img 
@@ -76,6 +75,10 @@ a:hover
 .hero-title 
 {
 	margin-top: -20px;
+	filter:
+	drop-shadow(0 0 2px #000)
+	drop-shadow(0 0 10px #000)
+	drop-shadow(0 0 20px #000);	
 }
 
 .card 
@@ -98,7 +101,8 @@ a:hover
 	margin-top: 32px; 	
 }
 
-@media (max-width: 900px) 
+@media (max-width: 900px),
+@media (orientation: portrait) 
 {
 	.card 
 	{
@@ -114,6 +118,16 @@ a:hover
 	{
 		width:30vw; 	
 	}
+  
+	.icon_link img
+	{
+		transform: scale(1.2);	  
+	}
+
+	.icon_link:hover img 
+	{
+		transform: scale(1.2);	
+	}  
   
 }
 
